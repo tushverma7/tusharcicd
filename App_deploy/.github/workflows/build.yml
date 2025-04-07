@@ -1,4 +1,4 @@
-name: Deploy Application to Azure
+name: Deploy Nodejs application to Azure using GitHub actions
 
 on:
   push:
