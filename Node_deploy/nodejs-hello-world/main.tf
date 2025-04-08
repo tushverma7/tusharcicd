@@ -1,5 +1,6 @@
 module "3tier_app" {
-  source = "github.com/rahulhbc/3TierIaC.git//multi_tier_arch"
+  #source = "github.com/rahulhbc/3TierIaC.git//multi_tier_arch"
+  #source = "github.com/tushverma7/tusharcicd.git"
 }
 
 resource "azurerm_linux_virtual_machine" "frontend_vm" {
@@ -29,7 +30,7 @@ resource "azurerm_linux_virtual_machine" "frontend_vm" {
       "sudo apt-get update -y",
       "sudo apt-get install -y docker.io -y",
       "sudo systemctl start docker",
-      "sudo docker run -d -p 80:3000 rahulhbc/nodejs-hello-world:v1"
+      "sudo docker run -d -p 80:3000 tushverma7/app-hello-world:v1"
     ]
 
     connection {
