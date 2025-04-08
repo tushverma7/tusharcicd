@@ -20,7 +20,7 @@ jobs:
 
       - name: Install Dependencies
         run: npm install
-        working-directory: assessment
+        working-directory: task
       - name: Run Tests
         run: npm test || echo "No tests available"
 
