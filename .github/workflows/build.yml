@@ -1,4 +1,4 @@
-name: CICD Pipeline from scratch using GitHub actions.
+name: CICD Pipeline from scratch using GitHub actions
 
 on:
   push:
